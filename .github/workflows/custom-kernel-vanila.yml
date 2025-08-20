@@ -116,6 +116,9 @@ jobs:
           echo "Removing '-dirty' string for 5.x kernel..."
           sed -i 's/-dirty//' ./common/scripts/setlocalversion
 
+          # Remove check_defconfig
+          sed -i 's/check_defconfig//' ./common/build.config.gki
+
       - name: Build with Retry
         uses: nick-fields/retry@v3
         with:
