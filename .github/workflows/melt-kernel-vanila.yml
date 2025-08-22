@@ -1,4 +1,4 @@
-name: custom kernel build - vanila
+name: melt kernel build - vanila
 permissions:
   contents: write  # Allow writing to repository contents (for pushing tags)
   actions: write   # Allows triggering actions
