@@ -156,3 +156,11 @@ jobs:
         with:
           name: ZTC-Anykernel3
           path: ./AnyKernel3/*
+
+      - name: Upload ABI and Symbol Files
+        uses: actions/upload-artifact@v4
+        with:
+          name: kernel-abi-files
+          path: |
+            ./android12-5.10-lts/common/android/abi_gki_aarch64.xml
+            ./android12-5.10-lts/out/android12-5.10/dist/vmlinux.symvers
